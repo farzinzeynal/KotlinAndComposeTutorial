@@ -52,6 +52,7 @@ android {
 dependencies {
 
     val coilVerison = "1.3.1"
+    val navVersion = "2.7.7"
 
     //Core
     implementation("androidx.core:core-ktx:1.13.1")
@@ -70,7 +71,12 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
+
     //Coil
     implementation("io.coil-kt:coil-compose:$coilVerison")
+    
+    //Navigation
+    implementation("androidx.navigation:navigation-runtime-ktx:$navVersion")
+    implementation("androidx.navigation:navigation-compose:$navVersion")
 
 }

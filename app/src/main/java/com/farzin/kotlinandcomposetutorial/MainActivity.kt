@@ -21,23 +21,22 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import com.farzin.kotlinandcomposetutorial.ui.custom_ui_component.CustomCircularIndicator
+import com.farzin.kotlinandcomposetutorial.ui.navigation.nav_host.SetupNavGraph
 
 class MainActivity : ComponentActivity() {
+
+    private lateinit var navController: NavHostController
 
     @ExperimentalMaterial3Api
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             KotlinAndComposeTutorialTheme {
-
-                Column (
-                    modifier = Modifier.fillMaxSize(),
-                    verticalArrangement = Arrangement.Center,
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ){
-                    CustomCircularIndicator()
-                }
+                navController = rememberNavController()
+                SetupNavGraph(navController = navController)
             }
         }
     }
