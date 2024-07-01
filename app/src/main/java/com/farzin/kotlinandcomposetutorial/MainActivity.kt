@@ -25,6 +25,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.farzin.kotlinandcomposetutorial.ui.custom_ui_component.CustomCircularIndicator
 import com.farzin.kotlinandcomposetutorial.ui.navigation.nav_host.SetupNavGraph
+import com.farzin.kotlinandcomposetutorial.ui.navigation_bottom.nav_host.BottomNavGraph
+import com.farzin.kotlinandcomposetutorial.ui.navigation_bottom.srceens.MainScreen
 
 class MainActivity : ComponentActivity() {
 
@@ -36,7 +38,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             KotlinAndComposeTutorialTheme {
                 navController = rememberNavController()
-                SetupNavGraph(navController = navController)
+                MainScreen()
             }
         }
     }

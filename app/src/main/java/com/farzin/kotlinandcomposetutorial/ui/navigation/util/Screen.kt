@@ -1,4 +1,4 @@
-package com.farzin.kotlinandcomposetutorial.ui.navigation.nav_host
+package com.farzin.kotlinandcomposetutorial.ui.navigation.util
 
 import com.farzin.kotlinandcomposetutorial.ui.utils.ArgumentKeyNames.DETAIL_ID_KEY
 

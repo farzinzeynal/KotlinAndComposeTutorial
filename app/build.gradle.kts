@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.farzin.kotlinandcomposetutorial"
-        minSdk = 24
+        minSdk = 25
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -51,8 +51,10 @@ android {
 
 dependencies {
 
+    implementation("androidx.wear.compose:compose-material:1.3.1")
     val coilVerison = "1.3.1"
     val navVersion = "2.7.7"
+    val materialVersion = "1.0.0"
 
     //Core
     implementation("androidx.core:core-ktx:1.13.1")
@@ -71,12 +73,14 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-
     //Coil
     implementation("io.coil-kt:coil-compose:$coilVerison")
     
     //Navigation
     implementation("androidx.navigation:navigation-runtime-ktx:$navVersion")
     implementation("androidx.navigation:navigation-compose:$navVersion")
+
+    //Material
+    implementation("androidx.compose.material:material:$materialVersion")
 
 }

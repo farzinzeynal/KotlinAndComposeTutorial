@@ -1,4 +1,4 @@
-package com.farzin.kotlinandcomposetutorial.ui.navigation.srceens
+package com.farzin.kotlinandcomposetutorial.ui.navigation_bottom.srceens
 
 
 import androidx.compose.foundation.clickable
@@ -25,7 +25,6 @@ fun HomeScreen(
     ){
         Text(
             modifier = Modifier.clickable {
-                navController.navigate(route = Screen.Detail.passId(1))
             },
             text = "Home",
             color = MaterialTheme.colorScheme.primary,
