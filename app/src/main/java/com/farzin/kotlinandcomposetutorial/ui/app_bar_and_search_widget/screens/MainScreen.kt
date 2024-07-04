@@ -35,7 +35,7 @@ import com.farzin.kotlinandcomposetutorial.ui.app_bar_and_search_widget.viewmode
 import com.farzin.kotlinandcomposetutorial.ui.theme.KotlinAndComposeTutorialTheme
 
 
-@OptIn(ExperimentalMaterial3Api::class)
+
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun MainScreen(mainViewModel: MainViewModel) {
